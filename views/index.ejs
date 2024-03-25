@@ -1,0 +1,16 @@
+<%- include ("./partials/header.ejs") %>
+   <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 100vh; background-image: url(https://img.freepik.com/premium-photo/indian-wedding-gate-decoration-green-eucalyptus-background_221414-522.jpg?size=626&ext=jpg&ga=GA1.1.1223122735.1691800397&semt=ais); background-size: cover;">
+    <div class="bg-white p-5 rounded" style="width: 28vw;">
+        <h1 class="text-uppercase text-center font-weight-bold text-zinc-700" style="font-size: 1.5rem;">Welcome to Pinterest</h1>
+        <form action="/login" method="post">
+            <input class="form-control rounded mt-2" type="text" name="username" placeholder="Username">
+            <input class="form-control rounded mt-2" type="password" name="password" placeholder="Password">
+            <input class="btn btn-danger rounded-pill mt-4 w-100" type="submit" value="Login">
+            <a class="font-weight-bold text-zinc-500 d-block mt-2" href="#">Forgot password?</a>
+            <p class="text-center text-zinc-700 mt-4">By continuing, you agree to Pinterest's Terms of Service Notice at collection</p>
+        </form>
+        <a class="d-block text-center font-weight-bold text-zinc-700 mt-4" href="/register">Don't have an account?</a>
+    </div>
+</div>
+
+<% include ("./partials/footer.ejs") %>
