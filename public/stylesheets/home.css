@@ -1,0 +1,117 @@
+
+.container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+   
+}
+
+.container .box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    padding-right: 25px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.container .box::-webkit-scrollbar {
+    display: none;
+}
+
+.container .box .imgbx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+}
+
+.container .box:hover .imgbx {
+    transform: translateY(-100%);
+}
+
+.container .box .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0%;
+}
+
+.container .box .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s ease-in-out;
+}
+
+.container .box .layer.layer1 {
+    background: #0096ff;
+    transform: translateY(100%);
+}
+
+.container .box:hover .layer.layer1 {
+    background: #0096ff;
+    transform: translateY(-100%);
+}
+
+.container .box .layer.layer2 {
+    background: #34eb5b;
+    transform: translateY(200%);
+}
+
+.container .box:hover .layer.layer2 {
+    transform: translateY(-100%);
+}
+
+.container .box .contentbx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    color: #fff;
+    transition: 0.8s ease-in-out;
+    transform: translateY(300%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.container .box:hover .contentbx {
+    transform: translateY(0);
+}
+
+.container .box:hover .contentbx div {
+    transform: translateY(0);
+}
+
+.hoga{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+.hoga h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.hoga h2{
+    font-size: 1.3rem;
+    
+    letter-spacing: -0.6px;
+}
+.hoga p{
+    font-size: 1rem;
+}
